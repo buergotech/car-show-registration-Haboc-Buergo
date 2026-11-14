@@ -1,12 +1,10 @@
-# dependencies and build output
-node_modules/
-dist/
-dist-ssr/
+# build output
 bin/
 obj/
 .vs/
+dist/
 
-# local database, logs and environment files
+# local database and logs
 *.db
 *.db-shm
 *.db-wal
