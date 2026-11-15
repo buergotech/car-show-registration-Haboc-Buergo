@@ -1,43 +1,56 @@
 # Car Show Registration System
 
-Frontend dashboard for the Car Show 2027 registration desk. It lists the
-registrations, tracks payments and check-ins, and shows the event totals.
+Integrative Programming 2 — Car Show Registration System project.
 
-## Stack
+## Start here
 
-- React 19
-- TypeScript
-- Vite
-- Tailwind CSS 4
-- lucide-react icons
-
-## Running locally
+The written documentation is in this package:
 
 ```
+docs/CarShow-Backend-Documentation-Haboc.docx
+```
+
+Open that file first. It contains the solution structure, the API screenshots,
+the test scenario results and the reflection answers.
+
+## Requirements
+
+- Node.js 18 or newer
+- npm (installed with Node.js)
+
+## Run the project
+
+```bash
 npm install
 npm run dev
 ```
 
-The dev server runs on http://localhost:5173.
+The development server starts on http://localhost:5173.
 
-## Other scripts
+To produce a production build:
 
-```
+```bash
 npm run build
-npm run preview
-npm run lint
 ```
 
-## Structure
+The output is written to `dist/`.
+
+## Folders
 
 ```
-src/
-  components/   dashboard sections, tables, modals and forms
-  data/         sample registrations used by the dashboard
-  hooks/        shared hooks
-  types/        registration, payment and activity types
-  utils/        notification helpers
+docs/                  written documentation
+public/                icons and static files
+src/components/        dashboard sections, tables, modals and forms
+src/data/              sample registrations used by the dashboard
+src/hooks/             shared hooks
+src/types/             registration, payment and activity types
+src/utils/             notification helpers
+Screenshot/             application screenshot
 ```
 
-Registrations, payments and activities are kept in local storage, so the
-dashboard keeps its state after a reload.
+Registrations, payments and activities are stored in the browser's local
+storage, so the dashboard keeps its state after a reload.
+
+## Repository
+
+https://github.com/buergotech/car-show-registration-Haboc-Buergo
