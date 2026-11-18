@@ -1,0 +1,220 @@
+@Api_HostAddress = http://localhost:5205
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "Juan Dela Cruz",
+  "contactNumber": "09171234567",
+  "email": "juan.delacruz@example.com",
+  "address": "123 Rizal St., Naga City",
+  "carMakeModel": "Toyota Supra MK4",
+  "plateNumber": "TST 1001",
+  "registrationType": "Competitor",
+  "amountPaid": 1000.00
+}
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "Juan Dela Cruz",
+  "contactNumber": "09171234567",
+  "email": "juan.delacruz@example.com",
+  "address": "123 Rizal St., Naga City",
+  "carMakeModel": "Toyota Supra MK4",
+  "plateNumber": "TST 1002",
+  "registrationType": "Exhibitor",
+  "amountPaid": 0
+}
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "Juan Dela Cruz",
+  "contactNumber": "09171234567",
+  "email": "juan.delacruz@example.com",
+  "address": "123 Rizal St., Naga City",
+  "carMakeModel": "Toyota Supra MK4",
+  "plateNumber": "TST 1003",
+  "registrationType": "VIP",
+  "amountPaid": 5000
+}
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "Juan Dela Cruz",
+  "contactNumber": "09171234567",
+  "email": "juan.delacruz@example.com",
+  "address": "123 Rizal St., Naga City",
+  "carMakeModel": "Toyota Supra MK4",
+  "plateNumber": "TST 1005",
+  "registrationType": "VIP",
+  "amountPaid": 0,
+  "registrationFee": 1,
+  "status": "Confirmed",
+  "registrationNumber": "HACK-1"
+}
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "",
+  "contactNumber": "",
+  "email": "",
+  "address": "",
+  "carMakeModel": "",
+  "plateNumber": "",
+  "registrationType": "Competitor",
+  "amountPaid": 0
+}
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "Juan Dela Cruz",
+  "contactNumber": "12345",
+  "email": "juan.delacruz@example.com",
+  "address": "123 Rizal St., Naga City",
+  "carMakeModel": "Toyota Supra MK4",
+  "plateNumber": "TST 1007",
+  "registrationType": "Competitor",
+  "amountPaid": 1000
+}
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "Juan Dela Cruz",
+  "contactNumber": "09171234567",
+  "email": "juan-at-example",
+  "address": "123 Rizal St., Naga City",
+  "carMakeModel": "Toyota Supra MK4",
+  "plateNumber": "TST 1008",
+  "registrationType": "Competitor",
+  "amountPaid": 1000
+}
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "Juan Dela Cruz",
+  "contactNumber": "09171234567",
+  "email": "juan.delacruz@example.com",
+  "address": "123 Rizal St., Naga City",
+  "carMakeModel": "Toyota Supra MK4",
+  "plateNumber": "TST 1009",
+  "registrationType": "Exhibitor",
+  "amountPaid": 2000
+}
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "Juan Dela Cruz",
+  "contactNumber": "09171234567",
+  "email": "juan.delacruz@example.com",
+  "address": "123 Rizal St., Naga City",
+  "carMakeModel": "Toyota Supra MK4",
+  "plateNumber": "TST 1010",
+  "registrationType": "Competitor",
+  "amountPaid": -100
+}
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "Juan Dela Cruz",
+  "contactNumber": "09171234567",
+  "email": "juan.delacruz@example.com",
+  "address": "123 Rizal St., Naga City",
+  "carMakeModel": "Toyota Supra MK4",
+  "plateNumber": "TST 1011",
+  "registrationType": "Sponsor",
+  "amountPaid": 100
+}
+
+###
+POST {{Api_HostAddress}}/api/registrations
+Content-Type: application/json
+
+{
+  "participantName": "Juan Dela Cruz",
+  "contactNumber": "09171234567",
+  "email": "juan.delacruz@example.com",
+  "address": "123 Rizal St., Naga City",
+  "carMakeModel": "Toyota Supra MK4",
+  "plateNumber": "TST 1001",
+  "registrationType": "Competitor",
+  "amountPaid": 1000
+}
+
+###
+GET {{Api_HostAddress}}/api/registrations
+
+###
+GET {{Api_HostAddress}}/api/registrations?page=2&pageSize=5
+
+###
+GET {{Api_HostAddress}}/api/registrations?page=999
+
+###
+GET {{Api_HostAddress}}/api/registrations?page=0
+
+###
+GET {{Api_HostAddress}}/api/registrations?pageSize=100
+
+###
+GET {{Api_HostAddress}}/api/registrations?type=VIP
+
+###
+GET {{Api_HostAddress}}/api/registrations?status=Confirmed
+
+###
+GET {{Api_HostAddress}}/api/registrations?participantName=juan
+
+###
+GET {{Api_HostAddress}}/api/registrations?participantName=JUAN
+
+###
+GET {{Api_HostAddress}}/api/registrations?participantName=dela
+
+###
+GET {{Api_HostAddress}}/api/registrations?type=Competitor&status=Pending&participantName=juan
+
+###
+GET {{Api_HostAddress}}/api/registrations?participantName=zzzzzz
+
+###
+GET {{Api_HostAddress}}/api/registrations?type=Sponsor
+
+###
+GET {{Api_HostAddress}}/api/registrations?status=Done
+
+###
+GET {{Api_HostAddress}}/api/registrations/00000000-0000-0000-0000-000000000001
+
+###
+GET {{Api_HostAddress}}/api/registrations/abc
+
+###
+GET {{Api_HostAddress}}/api/registrations/summary

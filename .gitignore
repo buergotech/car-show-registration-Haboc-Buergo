@@ -1,12 +1,21 @@
-node_modules
-dist
-dist-ssr
-*.local
-*.log
+# build output
+bin/
+obj/
+.vs/
+dist/
 
+# local database and logs
+*.db
+*.db-shm
+*.db-wal
+*.log
+*.local
+
+# editor and operating system files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.sw?
+*.user
