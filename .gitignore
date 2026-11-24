@@ -19,3 +19,15 @@ dist/
 *.suo
 *.sw?
 *.user
+
+frontend/node_modules/
+**/bin/
+**/obj/
+
+
+frontend/node_modules/
+**/bin/
+**/obj/
+
+
+frontend/node_modules/
